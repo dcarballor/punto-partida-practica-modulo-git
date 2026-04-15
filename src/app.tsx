@@ -17,15 +17,15 @@ const OPTIONS: Option[] = [
   {
     id: 2,
     title: "Opción 2",
-    description: "Ramas",
-    message:
-      "Una rama es una línea de desarrollo independiente. Puedes crear, fusionar y eliminar ramas sin afectar a main.",
+    description: "Ramas y merges",
+message:
+  "Una rama es como una línea de tiempo alternativa de tu código. Puedes experimentar, cometer errores y fusionar solo lo que funciona, sin afectar nunca a main.",
     featureFlag: false,
   },
   {
     id: 3,
     title: "Opción 3",
-    description: "Forks",
+    description: "Flujo profesional",
     message:
       "Un fork es una copia de un repositorio en tu cuenta. Puedes proponer cambios al original mediante un Pull Request.",
     featureFlag: true,
@@ -38,6 +38,30 @@ const OPTIONS: Option[] = [
   //   message: 'Escribe aquí el mensaje de la Opción 4.',
   //   featureFlag: false,
   // },
+    {
+    id: 4,
+    title: "Opción 4",
+    description: "Tags",
+    message:
+      "Un tag es una referencia fija a un commit. Se usa para marcar versiones: v1.0.0, v2.3.1…",
+    featureFlag: false,
+  },
+    { id: 5,
+  title: "Opción 5",
+  description: "Pull Request",
+  message:
+    "Una Pull Request es una propuesta formal para incorporar cambios de una rama a otra. Permite revisar el código antes de mergear y deja un historial claro de qué se hizo y por qué.",
+  featureFlag: false,
+},
+  {
+  id: 6,
+  title: "Opción 6",
+  description: "gitignore",
+  message:
+    "El fichero .gitignore le dice a Git qué ficheros debe ignorar. Úsalo para excluir ficheros de entorno (.env), dependencias (node_modules) y cualquier cosa que no deba estar en el repositorio.",
+
+  featureFlag: false,  },
+
 ];
 
 export default function App() {
